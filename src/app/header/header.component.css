@@ -1,0 +1,28 @@
+.toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(../../assets/images/head.jpg);
+  color: black;
+  
+}
+a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.exit{
+  font-size: 230%;
+  padding-right: 50px;
+  height: auto;
+  font-weight: bold;
+}
+.welcome{
+  font-size: 130%;
+  font-family: Comic Sans MS;
+}
