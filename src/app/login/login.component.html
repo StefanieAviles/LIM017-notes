@@ -1,0 +1,16 @@
+<section class="container" id="containerLogIn">
+    <img src="../../assets/images/NotesLogo.png" width="20%" height="40%" alt="MyNotes">
+    <h1>Log In</h1><br>
+    <form [formGroup]="formLog" (ngSubmit)="onSubmit()">
+        <div class="formDiv">
+            <label class="form-label">Email</label><br>
+            <input type="text" class="form-control" formControlName="emailLog" />
+        </div>
+        <div class="formDiv">
+            <label class="form-label">Password</label><br>
+            <input type="password" class="form-control" formControlName="passwordLog" />
+        </div>
+        <button class="btn">Continue</button>
+    </form>
+    <a (click)="toRegister()">Don't have an account? Sign up</a>
+</section>

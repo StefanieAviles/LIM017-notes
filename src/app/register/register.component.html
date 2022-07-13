@@ -1,0 +1,18 @@
+<section class="container" id="containerRegister">
+    <img src="../../assets/images/NotesLogo.png" width="20%" height="40%" alt="MyNotes">
+    <h1>New Register</h1><br>
+    <form [formGroup]="formReg" (ngSubmit) = "onSubmitReg()">
+        <div class="formDiv">
+            <label class="form-label">Email</label><br>
+            <input type="text" class="form-control" formControlName="emailRegister" />
+        </div>
+        <div class="formDiv">
+            <label class="form-label">Password</label><br>
+            <input type="password" class="form-control" formControlName="passwordRegister" />
+        </div>
+        <button class="btn" >Sign in</button>
+        <a>
+            <mat-icon (click)= "back()" class="exit">reply_all</mat-icon>
+        </a>
+    </form>
+</section>

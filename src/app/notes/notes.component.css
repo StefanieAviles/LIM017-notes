@@ -1,0 +1,23 @@
+.card {
+  border-radius: 4px;
+  width: 200px;
+  padding: 9px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.411);
+}
+.card-container {
+  /*  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 6px;
+    height: 330px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 5px;
+  margin: 2% ;
+  justify-items: center;
+  width: 95%;
+  height:100%;
+  row-gap: 15px;
+}

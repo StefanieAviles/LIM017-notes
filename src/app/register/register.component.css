@@ -1,0 +1,14 @@
+
+#containerRegister{
+    background-image: url(../../assets/images/brownTable2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+}
+.exit{
+    font-size: 230%;
+    padding-right: 50px;
+    height: auto;
+    font-weight: bold;
+}
+
