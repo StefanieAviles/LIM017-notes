@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FirestoreDataService } from '../firestore-data.service';
 import Note from '../Interfaces/note.interface';
+import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-notes',
@@ -9,7 +10,7 @@ import Note from '../Interfaces/note.interface';
 })
 export class NotesComponent implements OnInit {
 
-  notes: Note[] | undefined;
+  notes!: Note[];
   constructor(private firestoreDataService : FirestoreDataService) { }
 
   ngOnInit(): void {
@@ -17,5 +18,8 @@ export class NotesComponent implements OnInit {
       console.log(notes);
       this.notes = notes;
     })
+  }
+  drop(event: CdkDragDrop<string[]>) {
+    moveItemInArray(this.notes, event.previousIndex, event.currentIndex);
   }
 }
