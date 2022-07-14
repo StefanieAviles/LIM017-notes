@@ -17,6 +17,8 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { ReactiveFormsModule } from '@angular/forms';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import {DialogModule} from '@angular/cdk/dialog';
 
 @NgModule({
   declarations: [
@@ -26,13 +28,15 @@ import { ReactiveFormsModule } from '@angular/forms';
     NotesComponent,
     LoginComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     MatIconModule,
+    DragDropModule,
+    DialogModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the application is stable

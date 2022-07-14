@@ -1,5 +1,5 @@
-<div class="card-container">
-    <div class="card" *ngFor="let note of notes">
+<div class="card-container" cdkDropList cdkDropListOrientation="horizontal" (cdkDropListDropped)="drop($event)" >
+    <div class="card" *ngFor="let note of notes" cdkDrag>
         <p>{{note.Text}}</p> 
     </div>
 </div>
